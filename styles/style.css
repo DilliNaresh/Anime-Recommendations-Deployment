@@ -1,0 +1,53 @@
+html {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+}
+
+h1 {
+    margin: 10px;
+    padding: 20px, 0;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+figcaption {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    outline: none !important;
+    color: rgb(26, 26, 26);
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+}
+
+p,
+li {
+    font-size: 18px;
+    line-height: 1.5;
+}
