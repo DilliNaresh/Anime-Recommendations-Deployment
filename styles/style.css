@@ -33,73 +33,71 @@ li {
     line-height: 1.5;
 }
 
+a {
+    text-decoration: none;
+    font-weight: 400;
+    outline: none !important;
+}
+
+img {
+    -webkit-filter: drop-shadow(5px 7px 5px #222);
+    filter: drop-shadow(5px 7px 5px #222);
+}
+
+img.dark-theme {
+    -webkit-filter: drop-shadow(5px 7px 5px#fff);
+    filter: drop-shadow(5px 7px 5px #fff);
+}
+
 body {
     width: 1000px;
     margin: 0 auto;
     padding: 0 20px 20px 20px;
-    color: #000;
-    background-color: #fff;
-}
-
-a {
-    text-decoration: none;
-    outline: none !important;
-    color: rgb(145, 145, 145);
-}
-
-a:visited {
-    text-decoration: none;
-    color: rgb(145, 145, 145);
+    --text-color: #121212;
+    --bkg-color: #fff;
+    --anchor-color: #121212;
 }
 
 body.dark-theme {
-    color: #eee;
-    color: rgba(256, 256, 256, 0.87);
-    background: #121212;
+    --text-color: #eee;
+    --text-color: rgba(256, 256, 256, 0.87);
+    --bkg-color: #121212;
+    --anchor-color: #ffb4ef;
 }
-
-a.dark-theme {
-    color: #ffb4ef;
-}
-
-a.dark-theme:visited {
-    text-decoration: none;
-    color: #ffb4ef;
-}
-
 
 @media (prefers-color-scheme: dark) {
     body {
-        color: #eee;
-        color: rgba(256, 256, 256, 0.87);
-        background: #121212;
-    }
-
-    a {
-        color: #ffb4ef;
-    }
-
-    a:visited {
-        text-decoration: none;
-        color: #ffb4ef;
+        --text-color: #eee;
+        --text-color: rgba(256, 256, 256, 0.87);
+        --bkg-color: #121212;
+        --anchor-color: #ffb4ef;
     }
 
     body.light-theme {
         width: 1000px;
         margin: 0 auto;
         padding: 0 20px 20px 20px;
-        color: #000;
-        background-color: #fff;
+        --text-color: #121212;
+        --bkg-color: #fff;
+        --anchor-color: #121212;
     }
-    
-    a.light-theme {
-        text-decoration: none;
-        outline: none !important;
-        color: rgb(145, 145, 145);
+
+    img {
+        -webkit-filter: drop-shadow(5px 7px 10px#ffb4ef);
+        filter: drop-shadow(5px 7px 10px #ffb4ef);
     }
-    
-    a.light-theme:visited {
-        text-decoration: none;
-        color: rgb(145, 145, 145);
+
+    img.light-theme {
+        -webkit-filter: drop-shadow(5px 7px 5px #222);
+        filter: drop-shadow(5px 7px 5px #222);
     }
+}
+
+body {
+    color: var(--text-color);
+    background: var(--bkg-color);
+}
+
+a {
+    color: var(--anchor-color);
 }
