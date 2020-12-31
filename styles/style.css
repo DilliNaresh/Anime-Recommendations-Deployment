@@ -19,6 +19,7 @@ h1 {
 img {
     display: block;
     margin: 0 auto;
+    padding: 20px;
     -webkit-user-drag: none;
     -khtml-user-drag: none;
     -moz-user-drag: none;
@@ -27,17 +28,20 @@ img {
 
 figcaption {
     text-align: center;
+    font-size: 12px;
+    float: right;
+    padding: 0 60px;
 }
 
 a {
     text-decoration: none;
     outline: none !important;
-    color: rgb(26, 26, 26);
+    color: rgb(145, 145, 145);
 }
 
 a:visited {
     text-decoration: none;
-    color: rgb(26, 26, 26);
+    color: rgb(145, 145, 145);
 }
 
 a:hover,
