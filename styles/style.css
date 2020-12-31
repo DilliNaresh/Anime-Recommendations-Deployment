@@ -2,18 +2,11 @@ html {
     font-family: "Inter", sans-serif;
 }
 
-body {
-    width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px 20px 20px;
-}
-
-h1 {
-    margin: 10px;
-    padding: 20px, 0;
-    font-size: 60px;
-    font-weight: 800;
+figcaption {
     text-align: center;
+    font-size: 12px;
+    float: right;
+    padding: 0 60px;
 }
 
 img {
@@ -26,11 +19,26 @@ img {
     -o-user-drag: none;
 }
 
-figcaption {
+h1 {
+    margin: 10px;
+    padding: 20px, 0;
+    font-size: 60px;
+    font-weight: 800;
     text-align: center;
-    font-size: 12px;
-    float: right;
-    padding: 0 60px;
+}
+
+p,
+li {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    color: #000;
+    background-color: #fff;
 }
 
 a {
@@ -44,14 +52,54 @@ a:visited {
     color: rgb(145, 145, 145);
 }
 
-a:hover,
-a:active {
-    text-decoration: none;
-    color: rgb(88, 88, 88);
+body.dark-theme {
+    color: #eee;
+    color: rgba(256, 256, 256, 0.87);
+    background: #121212;
 }
 
-p,
-li {
-    font-size: 18px;
-    line-height: 1.5;
+a.dark-theme {
+    color: #ffb4ef;
+}
+
+a.dark-theme:visited {
+    text-decoration: none;
+    color: #ffb4ef;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #eee;
+        color: rgba(256, 256, 256, 0.87);
+        background: #121212;
+    }
+
+    a {
+        color: #ffb4ef;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: #ffb4ef;
+    }
+
+    body.light-theme {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 0 20px 20px 20px;
+        color: #000;
+        background-color: #fff;
+    }
+    
+    a.light-theme {
+        text-decoration: none;
+        outline: none !important;
+        color: rgb(145, 145, 145);
+    }
+    
+    a.light-theme:visited {
+        text-decoration: none;
+        color: rgb(145, 145, 145);
+    }
 }
