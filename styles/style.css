@@ -45,8 +45,8 @@ img {
 }
 
 img.dark-theme {
-    -webkit-filter: drop-shadow(5px 7px 5px#fff);
-    filter: drop-shadow(5px 7px 5px #fff);
+    -webkit-filter: drop-shadow(5px 7px 5px#ffb4ef);
+    filter: drop-shadow(5px 7px 5px #ffb4ef);
 }
 
 body {
