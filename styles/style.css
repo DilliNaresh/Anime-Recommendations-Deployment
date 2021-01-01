@@ -26,9 +26,14 @@ img {
     user-select: none;
 }
 
-#themeicon {
+[src="images/light-mode-icon.png"] {
     width: 30px;
     height: 30px;
+}
+
+[src="images/dark-mode-icon.png"] {
+    width: 27px;
+    height: 27px;
 }
 
 #banner {
@@ -49,6 +54,7 @@ p,
 li {
     font-size: 18px;
     line-height: 1.5;
+    font-weight: 400;
 }
 
 a {
