@@ -50,11 +50,19 @@
             <p>
                 If so, then why not have a go at getting some anime
                 recommendations from a machine learning algorithm?
-                Or maybe you're fine with a random anime suggestion?
             </p>
         </div>
-        <button onclick="nextButtonAlert()">アニメ見せて!</button>
-        <button onclick="nextButtonAlert()">Show me a random anime</button>
+        <div class="actions">
+            <button id="recbtn" onclick="nextButtonAlert()">
+                Give me some recommendations!
+            </button>
+            <p>
+                or
+                <a id="random" href="#" onclick="nextButtonAlert()"
+                    >give me a random anime</a
+                >
+            </p>
+        </div>
     </body>
     <script src="scripts/index.js"></script>
 </html>

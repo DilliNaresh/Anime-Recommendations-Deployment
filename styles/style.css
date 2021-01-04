@@ -4,6 +4,50 @@ html {
 
 .btn-toggle {
     float: right;
+    cursor: pointer;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
+#recbtn {
+    display: inline-block;
+    height: 70px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #ffc7f3;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 200ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+#recbtn:hover {
+    background: #ff96e8;
+}
+
+#recbtn:active {
+    outline: none;
+    transform: scale(0.98);
+}
+
+#random {
+    text-decoration: underline;
 }
 
 figcaption {
@@ -58,6 +102,7 @@ li {
 }
 
 a {
+    color: var(--anchor-color);
     text-decoration: none;
     font-weight: 400;
     outline: none !important;
@@ -74,6 +119,8 @@ a {
 }
 
 body {
+    color: var(--text-color);
+    background: var(--bkg-color);
     width: 1000px;
     margin: 0 auto;
     padding: 0 20px 20px 20px;
@@ -115,13 +162,4 @@ body.dark-theme {
         -webkit-filter: drop-shadow(5px 7px 5px #222);
         filter: drop-shadow(5px 7px 5px #222);
     }
-}
-
-body {
-    color: var(--text-color);
-    background: var(--bkg-color);
-}
-
-a {
-    color: var(--anchor-color);
 }
