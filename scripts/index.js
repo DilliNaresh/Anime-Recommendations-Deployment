@@ -21,7 +21,16 @@ if (prefersDarkScheme.matches && currentTheme === "light") {
     img.classList.toggle("dark-theme");
 }
 
+function enableCooldown(button, duration) {
+    button.disabled = true;
+
+    setTimeout(() => {
+        button.disabled = false;
+    }, duration);
+}
+
 btn.addEventListener("click", function () {
+    enableCooldown(btn, 1000);
     if (prefersDarkScheme.matches) {
         document.body.classList.toggle("light-theme");
         img.classList.toggle("light-theme");
