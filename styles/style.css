@@ -97,6 +97,7 @@ h1 {
 
 p,
 li {
+    list-style-position: inside;
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
