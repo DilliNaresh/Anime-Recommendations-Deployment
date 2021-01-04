@@ -47,7 +47,8 @@ html {
     transform: scale(0.98);
 }
 
-#random {
+#random,
+#repolink {
     text-decoration: underline;
 }
 
