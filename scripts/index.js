@@ -23,8 +23,6 @@ if (prefersDarkScheme.matches && currentTheme === "light") {
     img.classList.toggle("dark-theme");
 }
 
-console.log(theme);
-
 btn.addEventListener("click", function () {
     if (prefersDarkScheme.matches) {
         document.body.classList.toggle("light-theme");
@@ -41,7 +39,6 @@ btn.addEventListener("click", function () {
         document.getElementById("themeicon").src = "images/dark-mode-icon.png";
     }
     localStorage.setItem("theme", theme);
-    console.log(theme);
 });
 
 function nextButtonAlert() {

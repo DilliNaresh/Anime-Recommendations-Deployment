@@ -3,6 +3,12 @@ html {
     overflow: hidden;
 }
 
+body {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+}
+
 .btn-toggle {
     float: right;
     cursor: pointer;
@@ -26,10 +32,10 @@ html {
     padding: 1rem 2rem;
     margin: 0;
     text-decoration: none;
-    background: #ffc7f3;
-    color: rgba(0, 0, 0, 0.87);
+    background: #ffb4ef;
+    color: rgba(27, 27, 27, 0.87);
     font-family: "Inter", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1rem;
     cursor: pointer;
     text-align: center;
@@ -39,7 +45,7 @@ html {
 }
 
 #recbtn:hover {
-    background: #ff96e8;
+    background: #ff9be9;
 }
 
 #recbtn:active {
@@ -96,73 +102,16 @@ h1 {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    font-weight: 400;
+    outline: none !important;
+}
+
 p,
 li {
     list-style-position: inside;
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
-}
-
-a {
-    color: var(--anchor-color);
-    text-decoration: none;
-    font-weight: 400;
-    outline: none !important;
-}
-
-#banner {
-    -webkit-filter: drop-shadow(5px 7px 5px #222);
-    filter: drop-shadow(5px 7px 5px #222);
-}
-
-#banner.dark-theme {
-    -webkit-filter: drop-shadow(5px 7px 5px#ffb4ef);
-    filter: drop-shadow(5px 7px 5px #ffb4ef);
-}
-
-body {
-    color: var(--text-color);
-    background: var(--bkg-color);
-    width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px 20px 20px;
-    --text-color: #121212;
-    --bkg-color: #fff;
-    --anchor-color: #121212;
-}
-
-body.dark-theme {
-    --text-color: #eee;
-    --text-color: rgba(256, 256, 256, 0.87);
-    --bkg-color: #121212;
-    --anchor-color: #ffb4ef;
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        --text-color: #eee;
-        --text-color: rgba(256, 256, 256, 0.87);
-        --bkg-color: #121212;
-        --anchor-color: #ffb4ef;
-    }
-
-    body.light-theme {
-        width: 1000px;
-        margin: 0 auto;
-        padding: 0 20px 20px 20px;
-        --text-color: #121212;
-        --bkg-color: #fff;
-        --anchor-color: #121212;
-    }
-
-    #banner {
-        -webkit-filter: drop-shadow(5px 7px 10px#ffb4ef);
-        filter: drop-shadow(5px 7px 10px #ffb4ef);
-    }
-
-    #banner.light-theme {
-        -webkit-filter: drop-shadow(5px 7px 5px #222);
-        filter: drop-shadow(5px 7px 5px #222);
-    }
 }
