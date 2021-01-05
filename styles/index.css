@@ -1,6 +1,7 @@
 html {
     font-family: "Inter", sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 body {
@@ -13,11 +14,11 @@ body {
     float: right;
     cursor: pointer;
     background-color: Transparent;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
     overflow: hidden;
-    outline:none;
+    outline: none;
 }
 
 .actions {
