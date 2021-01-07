@@ -1,0 +1,61 @@
+html {
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+}
+
+h1 {
+    margin: 30px;
+    padding: 20px, 0;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+    outline: none;
+}
+
+p,
+li {
+    list-style-position: inside;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 12px;
+    float: right;
+    padding: 0 60px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#banner {
+    display: block;
+    margin: 0 auto;
+    padding: 70px 0 10px 0;
+}
+
+
