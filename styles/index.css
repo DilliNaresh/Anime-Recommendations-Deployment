@@ -10,17 +10,6 @@ body {
     padding: 0 20px 20px 20px;
 }
 
-.btn-toggle {
-    float: right;
-    cursor: pointer;
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-}
-
 .actions {
     display: block;
     text-align: center;
@@ -85,11 +74,10 @@ img {
     user-select: none;
 }
 
-
 #banner {
     display: block;
     margin: 0 auto;
-    padding: 20px;
+    padding: 70px 0 10px 0;
 }
 
 h1 {

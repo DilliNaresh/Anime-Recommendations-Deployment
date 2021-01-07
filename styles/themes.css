@@ -1,5 +1,16 @@
-/* https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/ */
+/* 
+https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/ 
+https://material.io/design/color/dark-theme.html
+*/
 
+.btn-toggle {
+    float: right;
+    cursor: pointer;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+}
 
 [src="images/light-mode-icon.png"] {
     width: 30px;
