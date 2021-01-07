@@ -22,12 +22,14 @@ body {
 }
 
 .actions {
+    display: block;
     text-align: center;
-    margin-top: 20px;
+    margin: 20 auto 0 auto;
+    /*
     position: absolute;
     left: 50%;
     -ms-transform: translate(-50%);
-    transform: translate(-50%);
+    transform: translate(-50%);*/
 }
 
 #recbtn {
