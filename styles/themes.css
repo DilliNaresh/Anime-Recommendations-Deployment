@@ -1,5 +1,16 @@
 /* https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/ */
 
+
+[src="images/light-mode-icon.png"] {
+    width: 30px;
+    height: 30px;
+}
+
+[src="images/dark-mode-icon.png"] {
+    width: 27px;
+    height: 27px;
+}
+
 @media (prefers-color-scheme: light) {
     body {
         color: var(--text-color);

@@ -85,15 +85,6 @@ img {
     user-select: none;
 }
 
-[src="images/light-mode-icon.png"] {
-    width: 30px;
-    height: 30px;
-}
-
-[src="images/dark-mode-icon.png"] {
-    width: 27px;
-    height: 27px;
-}
 
 #banner {
     display: block;
